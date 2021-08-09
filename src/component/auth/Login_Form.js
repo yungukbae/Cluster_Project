@@ -32,10 +32,10 @@ const Login_Form = () => {
                     </div>
                     </div>
 
-                    <div style={{height:200}}>
-                    <GoogleLoginButton onClick={() => alert("Hello")} />
-                    <AppleLoginButton onClick={() => alert("Hello")} />
-                    <GithubLoginButton onClick={() => alert("Hello")} />
+                    <div>
+                        <GoogleLoginButton onClick={() => alert("Hello")}><span>Start with Google</span></GoogleLoginButton>
+                        <AppleLoginButton onClick={() => alert("Hello")}><span>Start with Apple</span></AppleLoginButton>
+                        <GithubLoginButton onClick={() => alert("Hello")}><span>Start with Github</span></GithubLoginButton>
                     <button type="button" className="btn btn-outline-primary btn-sm">Don't you have an account?</button>
                     </div>
 

@@ -27,14 +27,11 @@ const Register_Form = () => {
     return (
         <div>
             <div>
-
                 <div className="container">
-
-                    <div style={{width: '500px', height:'600px',margin:'10% auto', boxShadow:'1px 1px 4px 1px #a6a6a6',borderRadius:'10px',textAlign:'center',padding:'30px'}}>
+                    <div style={{position:'relative',width: '500px', height:'600px',margin:'10% auto', boxShadow:'1px 1px 4px 1px #a6a6a6',borderRadius:'10px',textAlign:'center',padding:'30px'}}>
                         <i className="fas fa-lock" style={{height:'40px', fontSize:'25px'}}></i>
-                        <p className="h2">Register</p>
+                        <p className="h2">REGISTER</p>
                         <hr/>
-
                         <div style={{height:200, marginTop:5}}>
                             <form onSubmit={handleSubmit} >
                                 <div className="mb-2">
@@ -50,26 +47,25 @@ const Register_Form = () => {
                                            placeholder="Password-Check" onChange={(e) => setPw_check(e.target.value)} />
                                 </div>
 
+                                <div className="input-group mb-2">
+                                    <input type="text" className="form-control" placeholder="Recipient's username"
+                                           aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                                        <button className="btn btn-outline-secondary" type="button"
+                                                id="button-addon2">Button
+                                        </button>
+                                </div>
+
                                 <div className="col-auto">
                                     <button type="submit" className="btn btn-primary mb-3">SIGN UP</button>
                                 </div>
                             </form>
-
                         </div>
-
-                        <div style={{height:230, paddingTop:25}}>
-                                <GoogleLoginButton onClick={() => alert("Hello")}><span>Sign up with Google</span></GoogleLoginButton>
-                                <AppleLoginButton onClick={() => alert("Hello")}><span>Sign up with Apple</span></AppleLoginButton>
-                                <GithubLoginButton onClick={() => alert("Hello")}><span>Sign up with Github</span></GithubLoginButton>
+                        <div style={{ position:'absolute',width:440, bottom:30}}>
                                 <button type="button" className="btn btn-outline-primary btn-sm">Do you have an account?</button>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     );
 }
