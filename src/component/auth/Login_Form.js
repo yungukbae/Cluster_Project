@@ -1,4 +1,5 @@
 import {GoogleLoginButton,GithubLoginButton,AppleLoginButton} from "react-social-login-buttons";
+import {Link} from "react-router-dom";
 
 const Login_Form = () => {
 
@@ -7,9 +8,7 @@ const Login_Form = () => {
     return(
 
         <div>
-
             <div className="container">
-
                 <div style={{width: '500px', height:'600px',margin:'10% auto', boxShadow:'1px 1px 4px 1px #a6a6a6',borderRadius:'10px',textAlign:'center',padding:'30px'}}>
                     <i className="fas fa-lock" style={{height:'40px', fontSize:'25px'}}></i>
                     <p className="h2">LOGIN</p>
@@ -36,7 +35,7 @@ const Login_Form = () => {
                         <GoogleLoginButton onClick={() => alert("Hello")}><span>Start with Google</span></GoogleLoginButton>
                         <AppleLoginButton onClick={() => alert("Hello")}><span>Start with Apple</span></AppleLoginButton>
                         <GithubLoginButton onClick={() => alert("Hello")}><span>Start with Github</span></GithubLoginButton>
-                    <button type="button" className="btn btn-outline-primary btn-sm">Don't you have an account?</button>
+                        <Link to="/signup"><button type="button" className="btn btn-outline-primary btn-sm">Don't you have an account?</button></Link>
                     </div>
 
                 </div>

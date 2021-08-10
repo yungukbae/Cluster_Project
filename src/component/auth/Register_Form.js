@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {AppleLoginButton, GithubLoginButton, GoogleLoginButton} from "react-social-login-buttons";
+import {Link} from "react-router-dom";
 
 const Register_Form = () => {
 
@@ -61,7 +62,7 @@ const Register_Form = () => {
                             </form>
                         </div>
                         <div style={{ position:'absolute',width:440, bottom:30}}>
-                                <button type="button" className="btn btn-outline-primary btn-sm">Do you have an account?</button>
+                                <Link to="/signin"><button type="button" className="btn btn-outline-primary btn-sm">Do you have an account?</button></Link>
                         </div>
                     </div>
                 </div>
