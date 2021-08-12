@@ -3,7 +3,7 @@
     height: 25vh;
     width: 1000px;
     margin: 0 auto;
-    background-color: green;
+
 
 }
 
@@ -34,6 +34,7 @@
     background-color: #fff;
     border-radius: 22.5px;
     margin-top:20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
 }
 
@@ -72,5 +73,46 @@
     height: 75vh;
     width: 1000px;
     margin: 0 auto;
-    background-color: #00AAC3;
+}
+
+#main_bottom p{
+
+    height: 5vh;
+    line-height: 3vh;
+    padding: 10px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+
+}
+
+#group_list{
+
+    width: 1000px;
+    height: 70vh;
+    padding: 20px 30px 80px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+}
+
+#group_list .group_block{
+
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    display: grid;
+    grid-template-columns: 90px 220px;
+
+}
+
+#group_list .group_block .picture_circle{
+
+}
+
+#group_list .group_block .group_content{
+
+    display: grid;
+
 }
