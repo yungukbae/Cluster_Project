@@ -1,0 +1,117 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; /* 수직 정렬 */
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; /* 수평 정렬 */
+}
+
+#Form {
+
+    width: 400px;
+    height: 500px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    box-shadow: 1px 1px 5px 1px #a6a6a6;
+    border-radius: 5px;
+
+}
+
+#auth_text_area{
+
+    width: 340px;
+    height: 120px;
+
+}
+
+#auth_text_area i {
+
+    width: 70px;
+    height: 50px;
+    margin: 10px 140px 10px 140px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #101820;
+
+}
+
+#auth_text_area p{
+
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: #101820;
+
+}
+
+#auth_input_area {
+
+    width: 340px;
+    height: 290px;
+    padding-top: 10px;
+
+}
+
+#auth_input_area input,#auth_input_area .password_check,#auth_input_area .password{
+
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #000;
+    transition: 0.1s linear;
+
+}
+
+
+#auth_input_area #btn_submit{
+
+    width: 340px;
+    height: 40px;
+    background-color: #101820;
+    border: 3px solid #101820;
+    border-radius: 10px;
+    font-weight:450;
+    color: #fff;
+    transition: 0.1s linear;
+
+}
+
+#auth_input_area #btn_submit:hover{
+
+    background-color: #fff;
+    color:#101820;
+
+}
+
+#btn_signup {
+
+    width: 197px;
+    margin: 0 auto;
+
+}
+
+#btn_signin {
+
+    width: 180px;
+    margin: 0 auto;
+
+}
+
+#auth_input_area .btn_verify{
+
+    height: 38px;
+
+}
+
