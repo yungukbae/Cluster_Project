@@ -34,6 +34,9 @@ const Register_Form = () => {
                         </button></Link>
                     </div>
                 </div>
+                <div id="btn_home_container">
+                <Link to="/"><button id="btn_home" type="button" className="btn btn-info">Let's go home!</button></Link>
+                </div>
             </div>
         </div>
     );
