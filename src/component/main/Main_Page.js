@@ -4,7 +4,7 @@ const Main_Page = () => {
 
     return(
         <div>
-
+            <div className="container">
                 <div id="main_top">
 
                     <p>Find your team, achieve your goal.</p>
@@ -17,63 +17,80 @@ const Main_Page = () => {
                     <p>newly created groups</p>
                     <div id="group_list">
                         <div className="group_block">
-                            <div className="picture_circle"></div>
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
                             </div>
                         </div>
-                        <div className="group_block"><div className="picture_circle"></div>
+                        <div className="group_block">
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div>
-                            </div></div>
-                        <div className="group_block"><div className="picture_circle"></div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                            </div>
+                        </div>
+                        <div className="group_block">
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div>
-                            </div></div>
-                        <div className="group_block"><div className="picture_circle"></div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                            </div>
+                        </div>
+                        <div className="group_block">
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div>
-                            </div></div>
-                        <div className="group_block"><div className="picture_circle"></div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                            </div>
+                        </div>
+                        <div className="group_block">
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div>
-                            </div></div>
-                        <div className="group_block"><div className="picture_circle"></div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                            </div>
+                        </div>
+                        <div className="group_block">
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div>
-                            </div></div>
-                        <div className="group_block"><div className="picture_circle"></div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                            </div>
+                        </div>
+                        <div className="group_block">
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div></div></div>
-                        <div className="group_block"><div className="picture_circle"></div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                            </div>
+                        </div>
+                        <div className="group_block">
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div>
-                            </div></div>
-                        <div className="group_block"><div className="picture_circle"></div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                            </div>
+                        </div>
+                        <div className="group_block">
+                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
                             <div className="group_content">
                                 <div className="group_title">React를 사랑하는 그룹</div>
                                 <div className="group_type">스터디</div>
-                                <div className="group_info">저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</div>
-                            </div></div>
+                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+            </div>
         </div>
     );
 }
