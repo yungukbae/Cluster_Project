@@ -109,6 +109,13 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     display: grid;
     grid-template-columns: 90px 220px;
+    transition: 0.2s linear;
+
+}
+
+#group_list .group_block:hover{
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
