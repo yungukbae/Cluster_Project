@@ -1,8 +1,6 @@
 import {Link} from "react-router-dom";
 import './Auth_Form.css';
 
-
-
 const Login_Form = () => {
 
     return(
@@ -26,6 +24,9 @@ const Login_Form = () => {
                             Don't you have an account?
                         </button></Link>
                     </div>
+                </div>
+                <div id="btn_home_container">
+                <Link to="/"><button id="btn_home" type="button" className="btn btn-info">Let's go home!</button></Link>
                 </div>
             </div>
         </div>
