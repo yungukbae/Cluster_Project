@@ -3,8 +3,11 @@ import Login_Form from "./component/auth/Login_Form";
 import Register_Form from "./component/auth/Register_Form";
 import Main_Page from './component/main/Main_Page'
 import {BrowserRouter , Route} from "react-router-dom";
-
+import {firebase_confg} from "./config/Fbconfig";
 function App() {
+
+   firebase_confg();
+
   return (
       <BrowserRouter>
         <div className="App">
