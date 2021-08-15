@@ -200,6 +200,7 @@
     .container{
 
         display: grid;
+        grid-template-rows: 1fr 4fr !important;
         height: auto;
 
     }
