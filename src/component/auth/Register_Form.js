@@ -10,7 +10,7 @@ const Register_Form = () => {
     return (
         <div>
             <div className="container">
-                <div id="Form">
+                <div id="form">
                     <div id="auth_text_area">
                         <i className="fas fa-user-plus"></i>
                         <p>SIGN UP</p>
