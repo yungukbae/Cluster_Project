@@ -6,9 +6,10 @@
 #main_top{
 
     height: 25vh;
+    min-height: 230px;
+    max-height: 230px;
     width: 1000px;
     margin: 0 auto;
-
 
 }
 
