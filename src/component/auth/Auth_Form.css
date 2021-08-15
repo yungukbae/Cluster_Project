@@ -1,4 +1,12 @@
-#Form {
+
+.container{
+
+    display: grid;
+    grid-template-rows: 4fr 1fr ;
+
+}
+
+#form {
 
     width: 400px;
     height: 500px;
@@ -6,6 +14,7 @@
     padding: 30px;
     box-shadow: 1px 1px 5px 1px #a6a6a6;
     border-radius: 5px;
+    margin: 10px;
 
 }
 
@@ -98,13 +107,19 @@
 
 #btn_home_container{
 
-    position: fixed;
+    width: 137px;
+    min-height: 60px;
     bottom: 30px;
+    margin: 10px auto;
+
 
 }
 
 #btn_home{
+
+    width: 137px;
     font-weight: 500;
+
 }
 
 #btn_home:hover{
@@ -133,4 +148,100 @@
     to {
         background-position:20vw;
     }
+}
+
+@media (max-width: 1024px) {
+
+    .container{
+
+        height: 100vh !important;
+        display: grid;
+        grid-template-rows: 4fr 1fr ;
+
+    }
+
+}
+
+@media (max-width: 480px){
+
+    #form {
+
+        width: 380px;
+
+    }
+
+    #auth_text_area{
+
+        width: 320px;
+        height: 120px;
+
+    }
+
+
+    #auth_text_area i {
+
+        margin: 10px 125px;
+
+    }
+
+    #auth_input_area {
+
+        width: 320px;
+        height: 290px;
+        padding-top: 10px;
+
+    }
+
+    #auth_input_area #btn_submit{
+
+        width: 320px;
+
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .container{
+
+        grid-template-rows: 500px 50px;
+
+    }
+
+    #form {
+
+        height: 450px;
+        width: 280px;
+        box-shadow: none;
+        padding: 10px;
+
+    }
+
+    #auth_text_area{
+
+        width: 260px;
+        height: 80px;
+
+    }
+
+    #auth_text_area i {
+
+        margin: 0 95px;
+
+    }
+
+    #auth_input_area {
+
+        width: 260px;
+        height: 290px;
+        padding-top: 10px;
+
+    }
+
+    #auth_input_area #btn_submit{
+
+        width: 260px;
+
+    }
+
 }

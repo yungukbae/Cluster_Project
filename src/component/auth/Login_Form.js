@@ -3,11 +3,15 @@ import './Auth_Form.css';
 
 const Login_Form = () => {
 
+
+
+
     return(
 
         <div>
             <div className="container">
-                <div id="Form">
+
+                <div id="form">
                     <div id="auth_text_area">
                         <i className="fas fa-sign-in-alt"></i>
                         <p>SIGN IN</p>
@@ -25,9 +29,12 @@ const Login_Form = () => {
                         </button></Link>
                     </div>
                 </div>
+
                 <div id="btn_home_container">
                 <Link to="/"><button id="btn_home" type="button" className="btn btn-info">Let's go home!</button></Link>
                 </div>
+
+
             </div>
         </div>
 
