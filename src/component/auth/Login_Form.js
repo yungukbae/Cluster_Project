@@ -22,6 +22,11 @@ const Login_Form = () => {
                         <input id="input_password" type="password" className="form-control" placeholder="Password"/>
                         <button id="btn_submit">SIGN IN</button>
                         </form>
+                        <div id="auth_social_btn">
+                            <button className="btn_google"><i className="fab fa-google"></i></button>
+                            <button className="btn_github"><i className="fab fa-github"></i></button>
+                            <button className="btn_kakao"><div><img src="/img/kakao/kakao_login_medium_narrow.png" alt=""/></div></button>
+                        </div>
                     </div>
                     <div id="btn_signup">
                         <Link to="/signup"><button type="button" className="btn btn-outline-primary btn-sm">
