@@ -12,6 +12,15 @@ const Main_Page = () => {
                         <div id="search_input_div"><input type="text" id="input_search"/></div>
                         <button id="btn_search"><i className="fas fa-search"></i></button>
                     </div>
+                    <div id="search_tag_container">
+                        <ul>
+                            <a href=""><li>#react</li></a>
+                            <a href=""><li>#스터디</li></a>
+                            <a href=""><li>#vue</li></a>
+                            <a href=""><li>#node</li></a>
+                            <a href=""><li>#프로젝트</li></a>
+                        </ul>
+                    </div>
                 </div>
                 <div id="main_bottom">
                     <p>newly created groups</p>
