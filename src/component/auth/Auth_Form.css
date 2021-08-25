@@ -77,13 +77,6 @@
 
 }
 
-#auth_input_area #btn_submit:hover{
-
-    background-color: #fff;
-    color:#101820;
-
-}
-
 #btn_signup {
 
     width: 197px;
@@ -122,51 +115,29 @@
     font-size: 25px;
     background: #000;
     outline: 0;
-    border: 0;
+    border: 2px solid #000;
+    transition: 0.1s linear;
 
 }
 
 #auth_social_btn button i{
 
     color: #fff;
-
-}
-
-#auth_social_btn button:last-child{
-
-    position: absolute;
-    width: 90px;
-    height: 50px;
-    margin: 30px 8px;
-    border-radius: 10px;
-
-}
-
-#auth_social_btn button div{
-
-    width: 40px;
-    height: 50px;
-    overflow: hidden;
-    margin: 1.5px auto;
-
-}
-
-#auth_social_btn button img{
-
-    position: relative;
-    height: 45px;
+    transition: 0.1s linear;
 
 }
 
 #auth_social_btn .btn_google{
 
     background:#ea4335;
+    border: 2px solid #ea4335;
 
 }
 
-#auth_social_btn .btn_kakao {
+#auth_social_btn .btn_facebook{
 
-    background: #ffe812;
+    background:#3b5998;
+    border: 2px solid #3b5998;
 
 }
 
@@ -187,32 +158,79 @@
 
 }
 
-#btn_home:hover{
 
-    background-image:     linear-gradient(
-            to right,
-            #E7484F,
-            #E7484F 16.65%,
-            #F68B1D 16.65%,
-            #F68B1D 33.3%,
-            #FCED00 33.3%,
-            #FCED00 49.95%,
-            #009E4F 49.95%,
-            #009E4F 66.6%,
-            #00AAC3 66.6%,
-            #00AAC3 83.25%,
-            #732982 83.25%,
-            #732982 100%,
-            #E7484F 100%
-    );
-    animation:slidebg 2s linear infinite;
-
-}
 
 @keyframes slidebg {
     to {
         background-position:20vw;
     }
+}
+
+@media (hover: hover){
+
+    #auth_input_area #btn_submit:hover{
+
+        background-color: #fff;
+        color:#101820;
+
+    }
+
+    #auth_social_btn .btn_google:hover{
+
+        background: #fff;
+
+    }
+
+    #auth_social_btn .btn_google:hover i:nth-child(1){
+
+        color: #ea4335;
+
+    }
+
+    #auth_social_btn .btn_github:hover{
+
+        background-color: #fff;
+
+    }
+
+    #auth_social_btn .btn_github:hover i:nth-child(1) {
+
+        color: #000;
+
+    }
+
+    #auth_social_btn .btn_facebook:hover{
+
+        background-color: #fff;
+
+    }
+
+    #auth_social_btn .btn_facebook:hover i:nth-child(1){
+
+        color: #3b5998;
+
+    }
+
+    #btn_home:hover{
+        background-image:     linear-gradient(
+                to right,
+                #E7484F,
+                #E7484F 16.65%,
+                #F68B1D 16.65%,
+                #F68B1D 33.3%,
+                #FCED00 33.3%,
+                #FCED00 49.95%,
+                #009E4F 49.95%,
+                #009E4F 66.6%,
+                #00AAC3 66.6%,
+                #00AAC3 83.25%,
+                #732982 83.25%,
+                #732982 100%,
+                #E7484F 100%
+        );
+        animation:slidebg 2s linear infinite;
+    }
+
 }
 
 @media (max-width: 1024px) {
@@ -263,6 +281,18 @@
 
     }
 
+    #auth_social_btn button{
+
+        width: 82px;
+
+    }
+
+    #auth_social_btn button:last-child{
+
+        width: 82px;
+
+    }
+
 }
 
 @media (max-width: 375px) {
@@ -306,6 +336,18 @@
     #auth_input_area #btn_submit{
 
         width: 260px;
+
+    }
+
+    #auth_social_btn button{
+
+        width: 62px;
+
+    }
+
+    #auth_social_btn button:last-child{
+
+        width: 62px;
 
     }
 

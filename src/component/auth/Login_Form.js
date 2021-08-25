@@ -25,7 +25,7 @@ const Login_Form = () => {
                         <div id="auth_social_btn">
                             <button className="btn_google"><i className="fab fa-google"></i></button>
                             <button className="btn_github"><i className="fab fa-github"></i></button>
-                            <button className="btn_kakao"><div><img src="/img/kakao/kakao_login_medium_narrow.png" alt=""/></div></button>
+                            <button className="btn_facebook"><i className="fab fa-facebook"></i></button>
                         </div>
                     </div>
                     <div id="btn_signup">
