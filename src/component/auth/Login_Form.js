@@ -3,11 +3,15 @@ import './Auth_Form.css';
 
 const Login_Form = () => {
 
+
+
+
     return(
 
         <div>
             <div className="container">
-                <div id="Form">
+                <div id="auth_content">
+                <div id="form">
                     <div id="auth_text_area">
                         <i className="fas fa-sign-in-alt"></i>
                         <p>SIGN IN</p>
@@ -18,6 +22,11 @@ const Login_Form = () => {
                         <input id="input_password" type="password" className="form-control" placeholder="Password"/>
                         <button id="btn_submit">SIGN IN</button>
                         </form>
+                        <div id="auth_social_btn">
+                            <button className="btn_google"><i className="fab fa-google"></i></button>
+                            <button className="btn_github"><i className="fab fa-github"></i></button>
+                            <button className="btn_facebook"><i className="fab fa-facebook"></i></button>
+                        </div>
                     </div>
                     <div id="btn_signup">
                         <Link to="/signup"><button type="button" className="btn btn-outline-primary btn-sm">
@@ -25,8 +34,11 @@ const Login_Form = () => {
                         </button></Link>
                     </div>
                 </div>
+
                 <div id="btn_home_container">
                 <Link to="/"><button id="btn_home" type="button" className="btn btn-info">Let's go home!</button></Link>
+                </div>
+
                 </div>
             </div>
         </div>
