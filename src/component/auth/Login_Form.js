@@ -10,7 +10,7 @@ const Login_Form = () => {
 
         <div>
             <div className="container">
-
+                <div id="auth_content">
                 <div id="form">
                     <div id="auth_text_area">
                         <i className="fas fa-sign-in-alt"></i>
@@ -39,7 +39,7 @@ const Login_Form = () => {
                 <Link to="/"><button id="btn_home" type="button" className="btn btn-info">Let's go home!</button></Link>
                 </div>
 
-
+                </div>
             </div>
         </div>
 
