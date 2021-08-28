@@ -14,10 +14,10 @@ const Main_Page = () => {
                     </div>
                     <div id="search_tag_container">
                         <ul>
-                            <a href=""><li>#react</li></a>
+                            <a href=""><li>#React</li></a>
                             <a href=""><li>#스터디</li></a>
-                            <a href=""><li>#vue</li></a>
-                            <a href=""><li>#node</li></a>
+                            <a href=""><li>#Vue</li></a>
+                            <a href=""><li>#Node</li></a>
                             <a href=""><li>#프로젝트</li></a>
                         </ul>
                     </div>
@@ -25,89 +25,96 @@ const Main_Page = () => {
                 <div id="main_bottom">
                     <p>newly created groups</p>
                     <div id="group_list">
-
-                        <Link to="/signin">
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        <Link to="/item/efijso">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
                         </Link>
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        <Link to="/signin">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        </Link>
+                        <Link to="/signin">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        </Link>
+                        <Link to="/signin">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        </Link>
+                        <Link to="/signin">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        </Link>
+                        <Link to="/signin">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        </Link>
+                        <Link to="/signin">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        </Link>
+                        <Link to="/signin">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group_block">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">React를 사랑하는 그룹</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
+                        </Link>
+                        <Link to="/signin">
+                            <div className="group_block">
+                                <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
+                                <div className="group_content">
+                                    <div className="group_title">React 스터디 그룹!!</div>
+                                    <div className="group_type">스터디</div>
+                                    <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 동해물과 백두산이 마르고 닳도록 몇글자 까지 보이는걸까 까마귀 사마귀 기러귀 </p></div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group_block next_arrow">
-                            <div className="picture_circle"><img src="/img/react.png" alt="no"/></div>
-                            <div className="group_content">
-                                <div className="group_title">이건 Next 버튼</div>
-                                <div className="group_type">스터디</div>
-                                <div className="group_info"><p>저희는 React라이브러리를 스터디하는 그룹입니다. 주로 홍대입구역에 위치한 커피숍에서 스터디를 하고 각자 집으로 흩어집니다. 총 기간은 3개월 생각중이며 끝까지 함께하신 그룹원을 구합니다. 감사합니다. 많은 지원 바랍니다.</p></div>
-                            </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
