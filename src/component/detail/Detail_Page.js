@@ -1,4 +1,5 @@
 import './Detail_Page.css';
+import Map from "../map/Map";
 
 const Detail_Page = () => {
 
@@ -55,7 +56,7 @@ const Detail_Page = () => {
                     </div>
 
                     <div className="detail_contact_location">
-                        MAP
+                        <Map/>
                     </div>
 
                 </div>

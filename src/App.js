@@ -4,10 +4,13 @@ import Register_Form from "./component/auth/Register_Form";
 import Main_Page from './component/main/Main_Page';
 import Detail_Page from "./component/detail/Detail_Page";
 import {BrowserRouter , Route} from "react-router-dom";
-import {firebase_confg} from "./config/Fbconfig";
+import {firebase_config} from "./config/Fbconfig";
+import {kakao_map_config} from "./config/Kmconfig";
+
 function App() {
 
-   firebase_confg();
+   firebase_config();
+   kakao_map_config();
 
   return (
       <BrowserRouter>
