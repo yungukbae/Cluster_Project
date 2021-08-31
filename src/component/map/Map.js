@@ -10,7 +10,7 @@ const Map = () => {
         };
         var map = new window.kakao.maps.Map(container, options);
     }, []);
-
+//test
     return(
         <div>
             <div id="map" style={{width:400,height:400}}></div>
