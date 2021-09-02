@@ -131,10 +131,11 @@
 #group_list .group_block{
 
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: grid;
     grid-template-columns: 90px 220px;
     transition: 0.2s linear;
+    border-radius: 10px;
 
 }
 

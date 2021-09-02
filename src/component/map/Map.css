@@ -1,0 +1,53 @@
+#map_title{
+
+    height: 70px;
+    width: 650px;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+#map_container{
+
+    width: 650px;
+    height: 460px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0px auto;
+
+}
+
+#map{
+
+    width: 650px;
+    height: 400px;
+    margin: 0 auto;
+
+}
+
+#location_info{
+
+    height: 60px;
+    width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #476072;
+}
+
+#location_info i{
+
+    color: #fff;
+
+}
+
+#destination{
+
+    color: #fff;
+    font-weight: 700;
+
+}
