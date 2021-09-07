@@ -10,7 +10,7 @@ import {kakao_map_config} from "./config/Kmconfig";
 function App() {
 
    firebase_config();
-   kakao_map_config();
+   // kakao_map_config();
 
   return (
       <BrowserRouter>
