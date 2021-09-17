@@ -24,7 +24,7 @@ yarn-error.log*
 
 /src/config/
 /src/config/Kmconfig.js
-/src/component/
+/src/component(del)/
 
 .firebaserc
 .firebase/
