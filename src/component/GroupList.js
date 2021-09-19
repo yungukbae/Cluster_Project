@@ -1,10 +1,21 @@
+import Card from './Card'
 import styled from "styled-components";
+
+
+
+const ListContainer = styled.div`
+     
+`
+
+const ItemCard = styled.div`
+    
+`
 
 const GroupList = () => {
 
     return(
         <div>
-            list
+            <Card></Card>
         </div>
     )
 }
