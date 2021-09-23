@@ -20,6 +20,15 @@ const CardTop = styled.div`
     
 `
 
+const CardButton = styled.button`
+    
+    float:right;
+    border:0;
+    outline:0;
+    
+
+`
+
 const CardIMG = styled.div`
     
     height:140px;
@@ -27,6 +36,7 @@ const CardIMG = styled.div`
     position:absolute;
     top: 50%;
     left: 50%;
+    overflow:hidden;
     transform: translate(-50%, -50%);
     background-color:#fff;
     border-radius:70px;
@@ -35,15 +45,22 @@ const CardIMG = styled.div`
 
 const CardType = styled.div`
     
-    height: calc(100% - 60px);
+    position:absolute;
+    height: 30px;
+    width:100%;
     line-height:30px;
-    
+    bottom:50px;
+    text-align:center;
 `
 
 const CardTitle = styled.div`
 
-    height:40px;
-    line-height:40px;
+    position:absolute;
+    height:30px;
+    width:100%;
+    line-height:30px;
+    bottom:20px;
+    text-align:center;
 
 `
 
@@ -57,13 +74,13 @@ const Card = () => {
                     {/*background*/}
                     <div style={{backgroundColor:'#000',width:'100%',height:'50%'}}>
                         <div>
-                            <button>button</button>
+                            <CardButton>button</CardButton>
                         </div>
                     </div>
 
                     {/*content*/}
                     <div style={{height:'50%'}}>
-                        <CardIMG>picture</CardIMG>
+                        <CardIMG><img src="/img/react.png" alt="no img" style={{height:'100%',width:'100%'}}/></CardIMG>
                         <CardType>스터디</CardType>
                         <CardTitle>이것은 제목이다.</CardTitle>
                     </div>
