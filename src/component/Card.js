@@ -22,11 +22,13 @@ const CardTop = styled.div`
 
 const CardButton = styled.button`
     
+    height:50px;
     float:right;
     border:0;
     outline:0;
+    background-color:#fff;
+    margin:10px;
     
-
 `
 
 const CardIMG = styled.div`
