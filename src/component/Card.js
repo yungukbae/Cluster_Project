@@ -15,26 +15,37 @@ const CardItem = styled.div`
 
 const CardTop = styled.div`
     
-    background-color:#b6b6b6;
     position:relative;
     
 `
 
+const CardTopBack = styled.div`
+
+    background-image:url('/img/img.png');
+    width:100%;
+    height:50%;
+
+`
+
 const CardButton = styled.button`
     
-    height:50px;
+    height:30px;
+    width:30px;
     float:right;
-    border:0;
+    border-radius:30px;
     outline:0;
+    border:#000;
     background-color:#fff;
     margin:10px;
+    cursor:pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     
 `
 
 const CardIMG = styled.div`
     
-    height:140px;
-    width:140px;
+    height:110px;
+    width:110px;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -42,6 +53,7 @@ const CardIMG = styled.div`
     transform: translate(-50%, -50%);
     background-color:#fff;
     border-radius:70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     
 `
 
@@ -66,29 +78,50 @@ const CardTitle = styled.div`
 
 `
 
+const CardBottom = styled.div`
+
+
+`
+
+const BottomBtn = styled.button`
+
+    display:block;
+    background-color:#6c757d;
+    width:calc(100%/3);
+    height:100%;
+    float:left;
+    border:0;
+    outline:0;
+    
+    
+`
+
 const Card = () => {
 
 
     return (
-        <div style={{width: '100%', height: '100%'}}>
+        <div style={{width: '260px', height: '100%'}}>
             <CardItem>
                 <CardTop>
                     {/*background*/}
-                    <div style={{backgroundColor:'#000',width:'100%',height:'50%'}}>
+                    <CardTopBack>
                         <div>
-                            <CardButton>button</CardButton>
+                            <CardButton><i className="far fa-heart"></i></CardButton>
                         </div>
-                    </div>
+                    </CardTopBack>
 
                     {/*content*/}
                     <div style={{height:'50%'}}>
-                        <CardIMG><img src="/img/react.png" alt="no img" style={{height:'100%',width:'100%'}}/></CardIMG>
+                        <CardIMG><img src="/img/img_1.png" alt="no img" style={{height:'80%',display:'block',margin:'10% auto',}}/></CardIMG>
                         <CardType>스터디</CardType>
                         <CardTitle>이것은 제목이다.</CardTitle>
                     </div>
                 </CardTop>
-
-                <div></div>
+                <CardBottom>
+                    <BottomBtn>홍대</BottomBtn>
+                    <BottomBtn>주3회</BottomBtn>
+                    <BottomBtn>인원</BottomBtn>
+                </CardBottom>
             </CardItem>
         </div>
     );
