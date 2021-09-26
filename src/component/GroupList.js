@@ -14,7 +14,7 @@ const ListContainer = styled.div`
 const GroupList = () => {
 
     return(
-        <div style={{width:'820px',height:'100vh',margin:'0 auto'}}>
+        <div style={{width:'820px',height: 'auto',margin:'0 auto'}}>
             <ListContainer>
                 <Card/>
                 <Card/>

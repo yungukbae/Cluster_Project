@@ -30,7 +30,7 @@ const CardTopBack = styled.div`
 const CardButton = styled.button`
     
     height:30px;
-    width:30px;
+    width:60px;
     float:right;
     border-radius:30px;
     outline:0;
@@ -55,6 +55,18 @@ const CardIMG = styled.div`
     border-radius:70px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     
+`
+
+const CardExp = styled.div`
+ 
+    position:absolute;
+    height: 25px;
+    width:100%;
+    font-size: 12px;
+    line-height:20px;
+    bottom:80px;
+    text-align:center;
+
 `
 
 const CardType = styled.div`
@@ -86,14 +98,12 @@ const CardBottom = styled.div`
 const BottomBtn = styled.button`
 
     display:block;
-    background-color:#6c757d;
+    background-color:#f6f6f6;
     width:calc(100%/3);
     height:100%;
     float:left;
     border:0;
     outline:0;
-    
-    
 `
 
 const Card = () => {
@@ -106,13 +116,14 @@ const Card = () => {
                     {/*background*/}
                     <CardTopBack>
                         <div>
-                            <CardButton><i className="far fa-heart"></i></CardButton>
+                            <CardButton><i className="far fa-heart" style={{width:'40%',float:'left',lineHeight:'30px'}}></i><p style={{width:'60%',float:'left',lineHeight:'30px'}}>399</p></CardButton>
                         </div>
                     </CardTopBack>
 
                     {/*content*/}
                     <div style={{height:'50%'}}>
                         <CardIMG><img src="/img/img_1.png" alt="no img" style={{height:'80%',display:'block',margin:'10% auto',}}/></CardIMG>
+                        <CardExp>3일전</CardExp>
                         <CardType>스터디</CardType>
                         <CardTitle>이것은 제목이다.</CardTitle>
                     </div>
