@@ -90,7 +90,7 @@ const ModalInner = styled.div`
   box-sizing: border-box;
   position: relative;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  background-color: #fff;
+  background-color: #f6f6f6;
   border-radius: 10px;
   width: 70%;
   max-width: 540px;
@@ -112,7 +112,7 @@ const CloseButton = styled.button`
     right:0;
     border:0;
     outline:0;
-    background:#fff;
+    background:#f6f6f6;
 
 `
 

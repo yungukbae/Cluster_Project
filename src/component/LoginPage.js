@@ -1,6 +1,11 @@
-import Modal from "./reuse/Modal";
+import Modal from "./reuse/Modal"
 import {useState,useEffect} from 'react'
-import styled from "styled-components";
+import styled from "styled-components"
+import {ReactComponent as Kakao} from "../assets/svgicon/kakaotalk.svg"
+import {ReactComponent as Google} from "../assets/svgicon/google.svg"
+import {ReactComponent as Github} from "../assets/svgicon/github.svg"
+
+
 
 const LoginPage = () => {
 
@@ -23,9 +28,9 @@ const LoginPage = () => {
                     onClose={closeModal}><LoginSection>
                     <LoginTitle>DDUDO와 함께 시작하세요!</LoginTitle>
                     <div>
-                        <KakaoBtn></KakaoBtn>
-                        <GoogleBtn></GoogleBtn>
-                        <GithubBtn></GithubBtn>
+                        <KakaoBtn><Kakao width="50px" height="50px"/></KakaoBtn>
+                        <GoogleBtn><Google width="50px" height="50px"/></GoogleBtn>
+                        <GithubBtn><Github width="50px" height="50px" fill="#fff"/></GithubBtn>
                     </div>
                 </LoginSection></Modal>
             }
@@ -55,24 +60,36 @@ const SocialBtn = styled.button`
     height:130px;
     margin: 0 calc(10%/6);
     float:left;
+    outline:0;
+    border:0;
+    cursor:pointer;
+    border-radius:10px;
+    transition: 0.2s linear;
+    
+    
+    &:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
 
 `
 
 const KakaoBtn = styled(SocialBtn)`
 
+    background-color:#f9e000;
 
 `
 
 const GoogleBtn = styled(SocialBtn)`
 
-
-
+    background-color:#fff;
+        
+    
 `
 
 const GithubBtn = styled(SocialBtn)`
 
-
-
+    background-color:#000;
+    
 `
 
 
