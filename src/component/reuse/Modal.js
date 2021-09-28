@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Portal from '../Portal'
+import Portal from './Portal'
 
 const Modal = ({
                    className,
@@ -72,6 +72,7 @@ const ModalWrapper = styled.div`
   z-index: 1000;
   overflow: auto;
   outline: 0;
+  transition: 0.2s linear;
 `
 
 const ModalOverlay = styled.div`

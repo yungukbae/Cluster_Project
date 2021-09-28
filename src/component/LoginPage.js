@@ -1,11 +1,11 @@
 import Modal from "./reuse/Modal"
 import {useState,useEffect} from 'react'
 import styled from "styled-components"
-import {ReactComponent as Kakao} from "../assets/svgicon/kakaotalk.svg"
-import {ReactComponent as Google} from "../assets/svgicon/google.svg"
-import {ReactComponent as Github} from "../assets/svgicon/github.svg"
+import {ReactComponent as Kakao_Login} from "../assets/svgicon/kakaotalk.svg"
+import {ReactComponent as Google_Login} from "../assets/svgicon/google.svg"
+import {ReactComponent as Github_Login} from "../assets/svgicon/github.svg"
 
-
+const { Kakao } = window;
 
 const LoginPage = () => {
 
@@ -17,6 +17,19 @@ const LoginPage = () => {
         setModalVisible(false)
     }
 
+    const loginWithKaKao = () => {
+            console.log("pop");
+        Kakao.Auth.login({
+            success: function(authObj) {
+                alert(JSON.stringify(authObj))
+            },
+            fail: function(err) {
+                alert(JSON.stringify(err))
+            },
+        })
+    }
+
+
     return (
         <>
             <Button onClick={openModal}>Start!</Button>
@@ -26,11 +39,12 @@ const LoginPage = () => {
                     closable={true}
                     maskClosable={true}
                     onClose={closeModal}><LoginSection>
-                    <LoginTitle>DDUDO와 함께 시작하세요!</LoginTitle>
+                    <LoginTitle>LOGIN</LoginTitle>
+                    <LoginContent>환영합니다!</LoginContent>
                     <div>
-                        <KakaoBtn><Kakao width="50px" height="50px"/></KakaoBtn>
-                        <GoogleBtn><Google width="50px" height="50px"/></GoogleBtn>
-                        <GithubBtn><Github width="50px" height="50px" fill="#fff"/></GithubBtn>
+                        <KakaoBtn><Kakao_Login width="50px" height="50px" onClick={loginWithKaKao}/></KakaoBtn>
+                        <GoogleBtn><Google_Login width="50px" height="50px"/></GoogleBtn>
+                        <GithubBtn><Github_Login width="50px" height="50px" fill="#fff"/></GithubBtn>
                     </div>
                 </LoginSection></Modal>
             }
@@ -41,12 +55,24 @@ const LoginPage = () => {
 const LoginSection = styled.div`
 
     
-
 `
 
 const LoginTitle = styled.div`
 
+    height:60px;
+    width:100%;
+    text-align:center;
+    font-size:50px;
+    font-weight:700;
+    color:rgb(84,135,255);     
+     
+
+`
+
+const LoginContent = styled.div`
+
     height: 40px;
+    margin-bottom:20px;
     width:100%;
     text-align:center;
     font-size:20px;

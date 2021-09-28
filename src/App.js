@@ -9,6 +9,7 @@ function App() {
 
    firebase_config();
 
+
   return (
       <div className="App">
       <Menu></Menu>
