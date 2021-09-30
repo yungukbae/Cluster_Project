@@ -4,7 +4,6 @@ import styled from "styled-components"
 import {ReactComponent as Kakao_Login} from "../assets/svgicon/kakaotalk.svg"
 import {ReactComponent as Google_Login} from "../assets/svgicon/google.svg"
 import {ReactComponent as Github_Login} from "../assets/svgicon/github.svg"
-
 const { Kakao } = window;
 
 const LoginPage = () => {
@@ -17,36 +16,83 @@ const LoginPage = () => {
         setModalVisible(false)
     }
 
-    const loginWithKaKao = () => {
-            console.log("pop");
+    const socialLogin = (social) => {
+
         Kakao.Auth.login({
             success: function(authObj) {
-                alert(JSON.stringify(authObj))
+
+                console.log(authObj)
+                Kakao.API.request({
+                    url: '/v2/user/scopes',
+                    success:function(res){
+                        console.log('동의항목보기',res)
+                    },
+                    fail:function(res){
+                        console.log('fail',res)
+                    }
+                });
+
+                //동의 항목 가져오기
+                Kakao.API.request({
+                    url:'/v2/user/me',
+                    data:{
+                        property_keys:["kakao_account.profile","kakao_account.email","kakao_account.gender","kakao_account.age"]
+                    },
+                    success:function(res){
+                        console.log('동의항목',res);
+
+                        fetch(`http://test.ddudo.com/v1/user/signup?user_social=${social}`,{
+                            method:'post',
+                            mode: 'cors',
+                            credentials: 'include',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded',
+                                'Access-Control-Allow-Origin':'*',
+                                'Access-Control-Allow-Credentials':'true'
+                            },
+                            body: {
+                                "user_email": res.kakao_account.email,
+                                "user_token": authObj.access_token,
+                                "user_nickname": res.kakao_account.profile.nickname
+                            }
+                        }).then((res) => {
+                            console.log("success:", res);
+                        })
+                    },
+                    fail:function(res){
+                        console.log(res)
+                    }
+                })
+
+
             },
             fail: function(err) {
                 alert(JSON.stringify(err))
             },
         })
-    }
 
+    }
 
     return (
         <>
             <Button onClick={openModal}>Start!</Button>
+            <p style={{display:'none'}}>Kakao.init({process.env.REACT_APP_KAKAO_JS_API_KEY})</p>
             {
                 modalVisible && <Modal
                     visible={modalVisible}
                     closable={true}
                     maskClosable={true}
-                    onClose={closeModal}><LoginSection>
-                    <LoginTitle>LOGIN</LoginTitle>
-                    <LoginContent>환영합니다!</LoginContent>
-                    <div>
-                        <KakaoBtn><Kakao_Login width="50px" height="50px" onClick={loginWithKaKao}/></KakaoBtn>
-                        <GoogleBtn><Google_Login width="50px" height="50px"/></GoogleBtn>
-                        <GithubBtn><Github_Login width="50px" height="50px" fill="#fff"/></GithubBtn>
-                    </div>
-                </LoginSection></Modal>
+                    onClose={closeModal}>
+                    <LoginSection>
+                        <LoginTitle>LOGIN</LoginTitle>
+                        <LoginContent>환영합니다!</LoginContent>
+                        <div>
+                            <KakaoBtn id="kakao_bn" onClick={(e) => socialLogin('kakao')}><Kakao_Login width="50px" height="50px"/></KakaoBtn>
+                            <GoogleBtn onClick={(e) => console.log('google')}><Google_Login width="50px" height="50px"/></GoogleBtn>
+                            <GithubBtn onClick={(e) => console.log('github')}><Github_Login width="50px" height="50px" fill="#fff"/></GithubBtn>
+                        </div>
+                    </LoginSection>
+                </Modal>
             }
         </>
     )

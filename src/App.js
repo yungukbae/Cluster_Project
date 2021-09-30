@@ -4,11 +4,12 @@ import LoginPage from "./component/LoginPage";
 import {BrowserRouter , Route} from "react-router-dom";
 import {firebase_config} from "./config/Fbconfig";
 import {kakao_map_config} from "./config/Kmconfig";
+import dotenv from 'dotenv'
 
 function App() {
-
+   dotenv.config()
    firebase_config();
-
+    // console.log(process.env.REACT_APP_KAKAO_JS_API_KEY);
 
   return (
       <div className="App">
