@@ -4,6 +4,7 @@ import styled from "styled-components"
 import {ReactComponent as Kakao_Login} from "../assets/svgicon/kakaotalk.svg"
 import {ReactComponent as Google_Login} from "../assets/svgicon/google.svg"
 import {ReactComponent as Github_Login} from "../assets/svgicon/github.svg"
+import axios from 'axios';
 const { Kakao } = window;
 
 const LoginPage = () => {
@@ -17,11 +18,12 @@ const LoginPage = () => {
     }
 
     const socialLogin = (social) => {
-
+    let response_data,response_auth;
         Kakao.Auth.login({
             success: function(authObj) {
 
                 console.log(authObj)
+                response_auth = authObj;
                 Kakao.API.request({
                     url: '/v2/user/scopes',
                     success:function(res){
@@ -40,43 +42,75 @@ const LoginPage = () => {
                     },
                     success:function(res){
                         console.log('동의항목',res);
-
-                        fetch(`http://test.ddudo.com/v1/user/signup?user_social=${social}`,{
-                            method:'post',
-                            mode: 'cors',
-                            credentials: 'include',
-                            headers: {
-                                'Content-Type': 'application/x-www-form-urlencoded',
-                                'Access-Control-Allow-Origin':'*',
-                                'Access-Control-Allow-Credentials':'true'
-                            },
-                            body: {
-                                "user_email": res.kakao_account.email,
-                                "user_token": authObj.access_token,
-                                "user_nickname": res.kakao_account.profile.nickname
-                            }
-                        }).then((res) => {
-                            console.log("success:", res);
-                        })
+                        response_data = res;
                     },
                     fail:function(res){
                         console.log(res)
                     }
                 })
 
+                // setTimeout(() => {
+                //     fetch('http://test.ddudo.com/v1/user/signup?user_social=kakao',{
+                //         method:'POST',
+                //         mode: "cors",
+                //         credentials: 'include',
+                //         headers:{
+                //             'Content-type':'application/json',
+                //             'Access-Control-Allow-Origin':'*'
+                //         },
+                //         body:JSON.stringify({
+                //             user_email:response_data.kakao_account.email,
+                //             user_token:response_auth.access_token,
+                //             user_nickname:response_data.kakao_account.profile.nickname
+                //         })
+                //     }).then(res => console.log(res))
+                // },1000)
 
             },
             fail: function(err) {
                 alert(JSON.stringify(err))
             },
         })
+    setTimeout(() => {
+        postData('http://localhost:3000/v1/user/signup?user_social=kakao', {
+            user_email:response_data.kakao_account.email,
+            user_token:response_auth.access_token,
+            user_nickname:response_data.kakao_account.profile.nickname
+        })
+            .then(data => console.log(JSON.stringify(data))) // JSON-string from `response.json()` call
+            .catch(error => console.error(error));
+    },1500)
+
 
     }
+
+
+
+    function postData(url = '', data = {}) {
+        // Default options are marked with *
+        console.log('url',url,'data',data)
+        return fetch(url, {
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, cors, *same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                // 'Content-Type': 'application/json',
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Access-Control-Allow-Origin':'*'
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+            body: JSON.stringify(data), // body data type must match "Content-Type" header
+        })
+            .then(response => response.json()); // parses JSON response into native JavaScript objects
+    }
+
 
     return (
         <>
             <Button onClick={openModal}>Start!</Button>
-            <p style={{display:'none'}}>Kakao.init({process.env.REACT_APP_KAKAO_JS_API_KEY})</p>
+            {/*<p style={{display:'none'}}>Kakao.init({process.env.REACT_APP_KAKAO_JS_API_KEY})</p>*/}
             {
                 modalVisible && <Modal
                     visible={modalVisible}
