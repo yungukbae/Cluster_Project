@@ -1,7 +1,5 @@
 # DDUDO Front-end mission
 
-UI Design: https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/j91G3
-
 뚜두 프로젝트 10월 목표 📝
 
  10월 1주차 (메인 페이지)
