@@ -6,7 +6,7 @@ UI Design: https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
 
  10월 1주차 (메인 페이지)
 
-- [ ]  메인 페이지 디자인 
+- [x]  메인 페이지 디자인 
 - [ ]  카카오, 구글, 깃헙 로그인 API 연결
 - [ ]  로그인(아웃), 프로필 버튼 제작
 - [ ]  그룹 리스트 카드 디자인 제작 (현재 디자인 폐기)
