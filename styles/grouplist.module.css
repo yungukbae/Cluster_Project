@@ -1,0 +1,11 @@
+.maincontainer {
+
+    width: 100vw;
+    padding: 100px 250px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
