@@ -7,6 +7,36 @@ const Grouplist = () => {
         <>
             <div className={styles.maincontainer}>
                 <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
+                <Groupcard/>
             </div>
 
         </>
