@@ -2,6 +2,8 @@
 
 뚜두 프로젝트 10월 목표 📝
 
+UI Design https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
+
  10월 1주차 (메인 페이지)
 
 - [x]  메인 페이지 디자인 
