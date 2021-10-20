@@ -18,7 +18,7 @@ UI Design https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
 
 - [ ]  프로필 설정 페이지 퍼블리싱
 - [ ]  프로필 설정 페이지 기능 추가
-- [ ]  그룹 리스트 퍼블리싱
+- [x]  그룹 리스트 퍼블리싱
 
 10월 3주차
 
