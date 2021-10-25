@@ -9,8 +9,8 @@ UI Design https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
 - [x]  메인 페이지 디자인 
 - [x]  카카오, 구글, 깃헙 로그인 API 연결
 - [x]  로그인(아웃), 프로필 버튼 제작
-- [x]  그룹 리스트 카드 디자인 제작 (현재 디자인 폐기)
-- [ ]  CORS 문제 해결하기 😵
+- [x]  그룹 리스트 카드 디자인 제작
+- [x]  CORS 문제 해결하기 😵 (api_test_client=>~)
     
     
 
@@ -18,7 +18,7 @@ UI Design https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
 
 - [ ]  프로필 설정 페이지 퍼블리싱
 - [ ]  프로필 설정 페이지 기능 추가
-- [ ]  그룹 리스트 퍼블리싱
+- [x]  그룹 리스트 퍼블리싱
 
 10월 3주차
 
