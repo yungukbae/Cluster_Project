@@ -1,12 +1,12 @@
-.container{
+
+
+.maincontainer{
 
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,50%);
-    width: 500px;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
     padding: 20px;
+    margin: 0;
 
 }
 
@@ -34,6 +34,8 @@
 }
 
 .ddudo{
+    position: relative;
+    top: 30%;
     width:400px;
     text-align: center;
     margin:20px auto;
@@ -43,7 +45,8 @@
 }
 
 .ddudodes{
-
+    position: relative;
+    top: 30%;
     width:300px;
     text-align: center;
     margin:10px auto;
@@ -56,7 +59,7 @@
 .startbtn{
 
     position: relative;
-    top: 30%;
+    top: 40%;
     width: 180px;
     height: 50px;
     margin: 0 auto;
