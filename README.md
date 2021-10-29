@@ -13,13 +13,10 @@ UI Design https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
 - [x]  CORS 문제 해결하기 😵 (api_test_client=>~)
     
     
-
 10월 2주차 (사용자 페이지)
-
-- [ ]  프로필 설정 페이지 퍼블리싱
-- [ ]  프로필 설정 페이지 기능 추가
 - [x]  그룹 리스트 퍼블리싱
 
-10월 3주차
 
-10월 4주차
+11월 1주차
+- [ ]  프로필 설정 페이지 퍼블리싱
+- [ ]  프로필 설정 페이지 기능 추가
