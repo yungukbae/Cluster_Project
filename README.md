@@ -1,6 +1,7 @@
 # DDUDO Front-end mission
 
-뚜두 프로젝트 10월 목표 📝
+뚜두 프로젝트
+10월 목표 📝
 
 UI Design https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
 
@@ -12,11 +13,15 @@ UI Design https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
 - [x]  그룹 리스트 카드 디자인 제작
 - [x]  CORS 문제 해결하기 😵 (api_test_client=>~)
     
-    
+
 10월 2주차 (사용자 페이지)
+
 - [x]  그룹 리스트 퍼블리싱
 
 
+11월 목표 📝
+
 11월 1주차
+
 - [ ]  프로필 설정 페이지 퍼블리싱
 - [ ]  프로필 설정 페이지 기능 추가
