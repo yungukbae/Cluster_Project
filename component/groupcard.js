@@ -18,7 +18,7 @@ const Groupcard = ({ data }) => {
             <div className={styles.cardstatuscontainer}>
                 <div className={styles.statuscnt}><img src="./card_state_logo/viewcnt.svg" alt=""/>23</div>
                 <div className={styles.statuscnt}><img src="./card_state_logo/commentcnt.svg" alt=""/>1</div>
-                <div className={styles.statuscnt}><img src="./card_state_logo/likecnt.svg" alt=""/>91</div>
+                <div className={styles.likestatuscnt}><img src="./card_state_logo/likecnt.svg" alt=""/>91</div>
             </div>
         </div>
          </Link>

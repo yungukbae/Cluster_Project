@@ -13,7 +13,6 @@ const Custom404 = () => {
                 </div>
             </div>
             <div className={styles.middlecontainer}>
-                <div className={styles.wrongtext}>404!</div>
                 <div className={styles.wronglogo}><img src="./404_logo_svg/wrong_sign.svg" alt="No Img" /></div>
                 <div className={styles.infotext}> 잘못된 경로 입니다.</div>
                 <div className={styles.timetext}>5초후 메인 페이지로 이동됩니다...</div>

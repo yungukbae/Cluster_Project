@@ -15,7 +15,6 @@ const Signin = () => {
                     <div className={styles.ddudodes}>뚜두와 함께 시작하세요!</div>
                 </div>
                 <div className={styles.topbtn}><button>로그아웃</button><button>프로필 설정</button></div>
-
             </div>
 
             <div className={styles.maincontainer}>
