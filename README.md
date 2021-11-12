@@ -23,5 +23,7 @@ UI Design https://ovenapp.io/view/rOjjDbC28pysl06GEM1Q8nmSPeewDVmf/tbTul
 
 11월 1주차
 
+- [x]  404페이지 퍼블리싱
+- [ ]  404페이지 홈으로 이동 기능 추가
 - [ ]  프로필 설정 페이지 퍼블리싱
 - [ ]  프로필 설정 페이지 기능 추가
