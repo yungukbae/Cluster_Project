@@ -10,16 +10,12 @@ const useStyles = makeStyles((theme:Theme) => createStyles({
         transition:'all 1s',
         [theme.breakpoints.down('sm')]:{
                 maxWidth:'720px'
-                
         }
     }
 }))
 
-
 const LayoutCon: React.FC = (props) => {
     const classes = useStyles()
-
-
     return(
         <>
             <Box className={classes.root}>

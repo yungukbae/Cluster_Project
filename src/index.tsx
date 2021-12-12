@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { theme } from './components/theme/theme';
 import './index.css';
 import App from './router/App';
+
 ReactDOM.render(
   <ThemeProvider theme={theme}> 
     <CssBaseline/>
