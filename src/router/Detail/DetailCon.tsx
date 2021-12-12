@@ -1,5 +1,5 @@
-import LayoutProvider from '../../components/LayoutProvider/LayoutProvider';
-import DetailPre from './DetailPre';
+import LayoutProvider from '../../components/LayoutProvider/LayoutProvider'
+import DetailPre from './DetailPre'
 
 const DetailCon = () => {
 
