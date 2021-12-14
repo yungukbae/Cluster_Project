@@ -1,26 +1,40 @@
-import { makeStyles } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
-
+import React, { useState } from "react";
+import { makeStyles, Box, Button } from "@material-ui/core";
+import ModalProvider from "../../components/ModalProvider/ModalProvider";
 const useStyles = makeStyles({
   root: {
-    width:'100vw',
-    height:'100vh',
-    backgroundColor: '#b6b6b6',
+    width: "100vw",
+    height: "100vh",
   },
 });
 
-const HomePre = () => {
+const Tester = () => {
+  return (
+    <>
+      <div>이것은 모달의 내용</div>
+    </>
+  );
+};
 
-    const classes = useStyles();
+const HomePre: React.FC = () => {
+  const classes = useStyles();
+  const [open, setOpen] = useState(false);
 
-    return(
-        <>
+  const handleClick = () => {
+    console.log(open);
+    setOpen(!open);
+  };
 
-           <Box className={classes.root}>
-              여긴 홈이롱
-           </Box>
-        </>
-    )
-}
+  return (
+    <>
+      <Box className={classes.root}>
+        <Button onClick={handleClick}>click</Button>
+        <ModalProvider click={open ? 1 : 0}>
+          <Tester />
+        </ModalProvider>
+      </Box>
+    </>
+  );
+};
 
-export default HomePre
+export default HomePre;
